@@ -1,0 +1,64 @@
+}/* =========================
+   SHOP PAGE
+========================= */
+
+.shop-hero{
+
+    width:95%;
+
+    margin:60px auto;
+
+    text-align:center;
+}
+
+.shop-hero h1{
+
+    font-size:54px;
+
+    margin-bottom:15px;
+}
+
+.shop-hero p{
+
+    color:var(--muted);
+}
+
+.shop-filters{
+
+    width:95%;
+
+    margin:0 auto 50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.filter-btn{
+
+    border:none;
+
+    background:#fff;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    border:1px solid var(--border);
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:var(--primary);
+
+    color:#fff;
+}

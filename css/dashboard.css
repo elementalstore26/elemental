@@ -1,0 +1,587 @@
+```css
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Vazirmatn',sans-serif;
+    background:#f7f4ef;
+    min-height:100vh;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+}
+
+.login-box{
+
+    width:100%;
+
+    max-width:450px;
+
+    background:#ffffff;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.login-logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.login-logo h1{
+
+    font-size:38px;
+
+    color:#b59567;
+
+    margin-bottom:10px;
+}
+
+.login-logo p{
+
+    color:#777;
+}
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+}
+
+.input-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+}
+
+.input-group input{
+
+    height:55px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    padding:0 15px;
+
+    font-family:'Vazirmatn',sans-serif;
+
+    font-size:15px;
+}
+
+.input-group input:focus{
+
+    outline:none;
+
+    border-color:#b59567;
+}
+
+.login-btn{
+
+    height:55px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#b59567;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+
+    background:#9f7e54;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:576px){
+
+    .login-box{
+
+        padding:35px 25px;
+    }
+
+    .login-logo h1{
+
+        font-size:30px;
+    }
+
+}
+``````css
+/* =========================
+   DASHBOARD LAYOUT
+========================= */
+
+.dashboard{
+
+    display:flex;
+
+    min-height:100vh;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+
+    width:280px;
+
+    background:#ffffff;
+
+    border-left:1px solid #eaeaea;
+
+    padding:30px 20px;
+}
+
+.sidebar-logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+}
+
+.sidebar-logo h2{
+
+    color:#b59567;
+
+    font-size:28px;
+}
+
+.sidebar ul{
+
+    list-style:none;
+}
+
+.sidebar ul li{
+
+    margin-bottom:10px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.sidebar ul li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px;
+
+    text-decoration:none;
+
+    color:#333;
+
+    font-weight:500;
+}
+
+.sidebar ul li:hover{
+
+    background:#f5f1ea;
+}
+
+.sidebar ul li.active{
+
+    background:#b59567;
+}
+
+.sidebar ul li.active a{
+
+    color:#fff;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.dashboard-content{
+
+    flex:1;
+
+    padding:40px;
+}
+
+.dashboard-content h1{
+
+    margin-bottom:35px;
+
+    font-size:32px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+}
+
+.dashboard-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.05);
+}
+
+.dashboard-card h3{
+
+    font-size:16px;
+
+    color:#777;
+
+    margin-bottom:15px;
+}
+
+.dashboard-card span{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#b59567;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:992px){
+
+    .dashboard{
+
+        flex-direction:column;
+    }
+
+    .sidebar{
+
+        width:100%;
+    }
+
+    .dashboard-content{
+
+        padding:20px;
+    }
+}
+```
+```css
+/* =========================
+   PRODUCTS PAGE
+========================= */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+}
+
+.add-product-btn{
+
+    background:#b59567;
+
+    color:#fff;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+}
+
+.dashboard-table{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+}
+
+.dashboard-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td{
+
+    padding:18px;
+
+    text-align:center;
+
+    border-bottom:1px solid #eee;
+}
+
+.table-product-image{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+.edit-btn{
+
+    border:none;
+
+    background:#2196f3;
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.delete-btn{
+
+    border:none;
+
+    background:#f44336;
+
+    color:#fff;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+```
+```css
+/* =========================
+   ADD PRODUCT PAGE
+========================= */
+
+.product-form{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+    max-width:900px;
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+
+    font-weight:600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-family:'Vazirmatn',sans-serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    outline:none;
+
+    border-color:#b59567;
+}
+
+.save-product-btn{
+
+    background:#b59567;
+
+    color:#fff;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+.save-product-btn:hover{
+
+    background:#9f7e54;
+}
+``````css
+/* =========================
+   ORDERS PAGE
+========================= */
+
+.status-paid{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+}
+
+.status-pending{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+}
+```
+.search-box{
+
+    position:relative;
+
+    margin-bottom:25px;
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#888;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:14px 18px 14px 48px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-family:"Vazirmatn";
+
+    font-size:15px;
+
+    transition:.3s;
+
+    outline:none;
+
+}
+
+.search-box input:focus{
+
+    border-color:#7c3aed;
+
+    box-shadow:0 0 0 4px rgba(124,58,237,.15);
+
+}

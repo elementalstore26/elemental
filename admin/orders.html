@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>سفارش‌ها | ELEMENTAL</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <h2>ELEMENTAL</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    داشبورد
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fa-solid fa-box"></i>
+                    محصولات
+                </a>
+            </li>
+
+            <li>
+                <a href="add-product.html">
+                    <i class="fa-solid fa-plus"></i>
+                    افزودن محصول
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="orders.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    سفارش‌ها
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    تنظیمات
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-content">
+
+        <div class="page-header">
+
+            <h1>مدیریت سفارش‌ها</h1>
+
+        </div>
+
+        <div class="dashboard-table">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>کد سفارش</th>
+                        <th>مشتری</th>
+                        <th>مبلغ</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>#1001</td>
+                        <td>علی محمدی</td>
+                        <td>850,000 تومان</td>
+
+                        <td>
+                            <span class="status-paid">
+                                پرداخت شده
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="edit-btn">
+                                مشاهده
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>#1002</td>
+                        <td>سارا احمدی</td>
+                        <td>1,250,000 تومان</td>
+
+                        <td>
+                            <span class="status-pending">
+                                در انتظار
+                            </span>
+                        </td>
+
+                        <td>
+
+                            <button class="edit-btn">
+                                مشاهده
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="js/orders.js"></script>
+
+</body>
+
+</html>
+```

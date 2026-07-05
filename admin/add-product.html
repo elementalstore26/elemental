@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>افزودن محصول | ELEMENTAL</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <div class="sidebar-logo">
+
+            <h2>ELEMENTAL</h2>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                    داشبورد
+                </a>
+            </li>
+
+            <li>
+                <a href="products.html">
+                    <i class="fa-solid fa-box"></i>
+                    محصولات
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="add-product.html">
+                    <i class="fa-solid fa-plus"></i>
+                    افزودن محصول
+                </a>
+            </li>
+
+            <li>
+                <a href="orders.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    سفارش‌ها
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    <i class="fa-solid fa-gear"></i>
+                    تنظیمات
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <main class="dashboard-content">
+
+        <h1>
+            افزودن محصول جدید
+        </h1>
+
+       <form class="product-form" id="productForm">
+
+            <div class="form-group">
+
+                <label>نام محصول</label>
+<input type="text"
+       id="productName"
+       placeholder="نام محصول">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>قیمت (تومان)</label>
+
+<input type="number"
+       id="productPrice"
+       placeholder="850000">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>موجودی</label>
+
+<input type="number"
+       id="productStock"
+       placeholder="10">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>دسته‌بندی</label>
+
+                <select id="productCategory">
+
+                    <option>عروسک</option>
+                    <option>اسباب بازی</option>
+                    <option>بازی فکری</option>
+                    <option>هدیه</option>
+                    <option>دکوری</option>
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <label>تصویر محصول</label>
+
+                <input type="file">
+
+            </div>
+
+            <div class="form-group">
+
+                <label>توضیحات محصول</label>
+
+                <textarea rows="6" id="productDescription"></textarea>
+
+            </div>
+
+            <button type="submit"
+                    class="save-product-btn">
+
+                ثبت محصول
+
+            </button>
+
+        </form>
+
+    </main>
+
+</div>
+
+<script src="../js/products.js"></script>
+
+</body>
+
+</html>
+```
